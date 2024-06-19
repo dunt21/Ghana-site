@@ -1,0 +1,97 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+@font-face {
+    src: url('Unna-regular.ttf');
+    font-family: Unna-regular;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Unna-regular;
+}
+
+#hero{
+      background-image: url(ghana.jpg);
+      background-size: cover;
+      height: auto;
+      max-width: 100%;
+      padding:100px 20px 100px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0px;
+}
+
+@media only screen and (min-width: 400px){
+    #hero{
+        background-image: url(ghana.jpg);
+    }
+}
+
+h1,h2{
+    background: #6c9a8b;
+    font-size:large;
+}
+
+#activity{
+    padding: 5px 40px ;
+    background:linear-gradient(#cbe896,#aed9e0);
+    margin: 0px;
+    
+    }
+    
+.pic{
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px 5px 20px;
+    
+ 
+}
+
+.edit{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 5px;
+} 
+
+.img{
+    border: 3px solid #1D3557 ;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px 10px;
+}  
+
+#guide{
+    background: #DFFFFD;
+    padding: 10px;
+}
+
+#card{
+    display: flex;
+    align-items: center;
+    margin: 30px  auto;
+    padding: 5px 5px 5px 5px;
+    border:1px solid white ;
+    background: #d68c45;
+    width: 400px;
+    color: #191d32;
+    border-bottom: 7px solid #99582a;
+}
+
+ 
+
+
+img {
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+}
