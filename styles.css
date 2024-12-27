@@ -8,90 +8,148 @@ DARK BLUE: #1D3557
 
 */
 @font-face {
-    src: url('Unna-regular.ttf');
-    font-family: Unna-regular;
+  src: url("Unna-regular.ttf");
+  font-family: Unna-regular;
+}
+
+body,
+#hero,
+#activity,
+.pic,
+#guide {
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    text-align: center;
-    font-family: Unna-regular;
+  margin: 0;
+  text-align: center;
+  font-family: Unna-regular;
 }
 
-#hero{
-      background-image: url(ghana.jpg);
-      background-size: cover;
-      height: auto;
-      max-width: 100%;
-      padding:100px 20px 100px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0px;
+#hero {
+  background-image: url(ghana.jpg);
+  background-size: 100% 110%;
+  /* height: auto; */
+  /* max-width: 100%; */
+  padding: 15% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
 }
 
-@media only screen and (min-width: 400px){
-    #hero{
-        background-image: url(ghana.jpg);
-    }
+h1,
+h2 {
+  background: #8fe9cb;
+  font-size: 150%;
 }
 
-h1,h2{
-    background: #6c9a8b;
-    font-size:large;
+.loc {
+  font-weight: bold;
 }
 
-#activity{
-    padding: 5px 40px ;
-    background:linear-gradient(#cbe896,#aed9e0);
-    margin: 0px;
-    
-    }
-    
-.pic{
-    display: flex;
-    justify-content: center;
-    padding: 5px 20px 5px 20px;
-    
- 
+#activity {
+  padding: 1px 0 0 0;
+  background: linear-gradient(#cbe896, #aed9e0);
+  margin: 0px;
 }
 
-.edit{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    padding: 5px;
-} 
-
-.img{
-    border: 3px solid #1D3557 ;
-    border-radius: 10px;
-    padding: 0px;
-    margin: 0px 10px;
-}  
-
-#guide{
-    background: #DFFFFD;
-    padding: 10px;
+.pic {
+  display: flex;
+  justify-content: center;
+  /* padding: 5px 20px 5px 20px; */
 }
 
-#card{
-    display: flex;
-    align-items: center;
-    margin: 30px  auto;
-    padding: 5px 5px 5px 5px;
-    border:1px solid white ;
-    background: #d68c45;
-    width: 400px;
-    color: #191d32;
-    border-bottom: 7px solid #99582a;
+.edit {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 90%;
 }
 
- 
+.img {
+  border: 3px solid #1d3557;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 0px 10px;
+}
 
+#guide {
+  background: #dffffd;
+  padding: 10px 0;
+}
+
+#card {
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  /* padding: 5px 5px 5px 5px; */
+  border: 1px solid white;
+  background: #d68c45;
+  width: 400px;
+  color: #191d32;
+  border-bottom: 7px solid #99582a;
+  border-radius: 1rem;
+}
 
 img {
-    width: 150px;
-    padding: 10px;
-    border-radius: 30px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+@media (max-width: 599px) {
+  body,
+  #hero,
+  .pic,
+  #activity,
+  #guide {
+    width: 100%;
+    height: 100%;
+  }
+
+  #hero {
+    /* max-width: 0; */
+    padding: 0;
+    background-size: 100%;
+    padding: 60px 0;
+  }
+  h1,
+  h2 {
+    font-size: 15px;
+  }
+
+  .pic {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #activity {
+    padding: 5px 0;
+  }
+
+  .edit {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+  }
+
+  .loc {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  #guide {
+    padding: 10px 0;
+  }
+
+  #card {
+    width: 90%;
+    border-radius: 1rem;
+    font-size: 12px;
+  }
 }
